@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<link rel="stylesheet" href="bank.css">
+<body>
+    <fieldset id="fieldset">
+            <div id="box1">
+                <table>
+                    <tr>
+                        <td><h1>Available Balance is : </h1></td>
+                        <td><p id="aamount"></p></td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <div id="box2">
+                <table>
+                    <tr>
+                        <td><h2>Deposit  </h2></td>
+                        <td><p id="damount"></p></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Withdraw  </h2></td>
+                        <td><p id="wamount"></p></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="box3">
+                <table>
+                    <tr>
+                        <td><p>Account Number</p></td>
+                        <td><p></p>XXXX-XXXX-XXXXX</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Account Holder Name</p>
+                        </td>
+                        <td><p>Tripple H</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>CRN</p></td>
+                        <td><p>XXXXX</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="box4">
+                <table>
+                    <tr>
+                        <td>
+                            <select name="transaction" id="dropdown">
+                                <option value="deposit" id="seldeposit">Deposit</option>
+                                <option value="withdraw" id="selwithdraw">Withdraw</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" id="description" placeholder="Description" >
+                        </td>
+                        <td>
+                            <input type="number" id="value" placeholder="value" >
+                        </td>
+                        <td>
+                            <button id="button" onclick="transaction()">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="box5">
+                <table id="table">
+                    <tr>
+                        <td><h2 id="text13">Deposit</h2></td>
+                        <td><h2 id="text14">Withdraw</h2></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table id="table1">
+                            <tr>
+                                <th>    Date    </th>
+                                <th>    Description </th>
+                                <th>    Value   </th>
+                            </tr>
+                        </table>
+                        </td>
+                        <td>
+                                <table id="table2">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Description</th>
+                                    <th>Value</th>
+                                </tr>
+                            </table>
+                            </td>
+                    </tr>
+                </table>
+                </div>
+    </fieldset>
+</body>
+<script src="bank.js">
+</script>
+</html>
